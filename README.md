@@ -18,7 +18,7 @@ Points à développer :
 //nom : Flavio
 
 --> Création classe Monstre (classes à voir)
-//nom :
+//nom : Flavio
 
 --> Bouton lancement combat (adaptation des stats Monstre ->10% de diffréence avec le personnage)
 //nom :
