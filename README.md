@@ -12,7 +12,7 @@ Points à développer :
 //nom :
 
 --> Boutons actions persos (attaquer, défendre, utiliser un sort, fuir)
-//nom :
+//nom : Tom
 
 --> Création classe personnage (classes à voir)
 //nom : Flavio

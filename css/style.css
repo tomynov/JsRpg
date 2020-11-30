@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+.btn_combat{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px;
+}
