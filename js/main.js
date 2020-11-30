@@ -8,11 +8,12 @@ $("#btn_infos").click(function(){
     var infos = ['PV : ', 'MP : ', 'Vitesse : '];
     for(i=0; i < infos.length; i++ ){
         $("#text_infos").append(`
-            <p> ${infos[i]} </p>
+            <p class="p_infos"> ${infos[i]} </p>
         `)
     }  
 })
 
 $("#close").click(function(){
     modal.style.display = "none";
+    $(".p_infos").remove();
 })
