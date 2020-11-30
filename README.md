@@ -12,13 +12,13 @@ Points à développer :
 //nom :
 
 --> Boutons actions persos (attaquer, défendre, utiliser un sort, fuir)
-//nom :
+//nom : Tom
 
 --> Création classe personnage (classes à voir)
 //nom : Flavio
 
 --> Création classe Monstre (classes à voir)
-//nom :
+//nom : Flavio
 
 --> Bouton lancement combat (adaptation des stats Monstre ->10% de diffréence avec le personnage)
 //nom :
