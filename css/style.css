@@ -4,6 +4,7 @@
 
 .title{
     text-align: center;
+    margin: 50px auto;
 }
 
             /* MAIN */
@@ -54,6 +55,7 @@
 .joueur{
     display: block;
     display: inline-block;
+    width: 100%;
     margin: 10px;
     padding: 8px;
 }
@@ -62,14 +64,17 @@
     display: block;
     display: inline-block;
     background-repeat: no-repeat;
-    height: 200px;
-    width: 250px;
-    margin: 5px;
+    border: 1px dashed black;
+    height: 280px;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 #guerrier{
     background-image: url(../img/guerrier.jpg);
-
 }
 
 #archer{
@@ -77,11 +82,23 @@
 }
 
 #ninja{
-    background-image: url(../img/archer.jpg);
+    background-image: url(../img/ninja.jpg);
 }
 
 #magicien{
-    background-image: url(../img/archer.jpg);
+    background-image: url(../img/magician.jpg);
+}
+
+#ogre{
+    background-image: url(../img/ogre.jpg);
+}
+
+#gobelin{
+    background-image: url(../img/gobelin.jpeg);
+}
+
+#esprit{
+    background-image: url(../img/esprit.jpg);
 }
 
 

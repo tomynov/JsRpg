@@ -1,12 +1,43 @@
 // import {Personnage} from './Personnage.js';
 
+    //// CREATION DES PERSO (console) ////
+
 $("#creaPerso").click(function(){
     var guerrier = new Guerrier();
-    var ogre = new Ogre();
     console.log(guerrier);
+})
+
+$("#creaPerso2").click(function(){
+    var archer = new Archer();
+    console.log(archer);
+})
+
+$("#creaPerso3").click(function(){
+    var ninja = new Ninja();
+    console.log(ninja);
+})
+
+$("#creaPerso4").click(function(){
+    var magicien = new Magician();
+    console.log(magicien);
+})
+
+$("#creaMonstre").click(function(){
+    var ogre = new Ogre();
     console.log(ogre);
 })
 
+$("#creaMonstre2").click(function(){
+    var gobelin = new Gobelin();
+    console.log(gobelin);
+})
+
+$("#creaMonstre3").click(function(){
+    var esprit = new Esprit();
+    console.log(esprit);
+})
+
+    /// FONCTION ATTAQUE /
 $("#atk").click(function(){
     let guerrier = new Guerrier();
     let orgre = new Ogre();
