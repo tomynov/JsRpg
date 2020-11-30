@@ -3,16 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/style.css" rel="stylesheet">
-    <script src="main.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- style with boostrapp-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>JSRPG</title>
 </head>
 <body>
-    <h1>Game</h1>
-    <div class="btn_combat">
-        <button class="atk">Attaquer</button> 
-        <button class="srt">Sort</button> 
-        <button class="run" >Fuir</button> 
-    </div>
+    <header>
+        <h1 class="title">Game</h1> 
+    </header>
+
+    <main>
+        <!-- Trigger/Open The Modal -->
+        <button id="btn_infos">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                <div id="text_infos">
+
+                </div>
+            </div>
+
+        </div>
+
+            <!-- Slection Perso -->
+        <section class="joueur">
+            <div class="imgPerso"> <img id="guerrier" alt="Perso1"> </div>
+            <div class="imgPerso"> <img id="archer" alt="Perso2"> </div>
+            <div class="imgPerso"> <img id="ninja" alt="Perso3"> </div>
+            <div class="imgPerso"> <img id="magicien" alt="Perso4"> </div>
+        </section>
+
+
+        <button id="creaPerso">Choix 1</button>
+        <button id="creaPerso2">Choix 2</button>
+
+        <!-- Pour le mode Combat-->
+        <div class="btn_combat">
+            <button id="atk">Attaquer</button> 
+            <button id="srt">Sort</button> 
+            <button id="run" >Fuir</button> 
+        </div>
+
+        <!-- Affiche Pv et Atk -->
+    </main>
+
+    <footer>
+        <p>Projet réalisé par :</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/combat.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Personnage.js"></script>
+    <script src="js/Monstre.js"></script>
 </body>
 </html>

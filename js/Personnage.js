@@ -64,3 +64,5 @@ class Magician extends Personnage{
         this.vitesse = 20;
     }
 }
+
+// export { Personnage };
