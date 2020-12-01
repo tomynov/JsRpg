@@ -5,6 +5,9 @@
 .title{
     text-align: center;
     margin: 50px auto;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    text-shadow: -1px -1px rgb(201, 68, 68), 1px 1px rgb(191, 206, 53), -3px 0 4px #000;
 }
 
             /* MAIN */
@@ -51,6 +54,19 @@
 
 /*------------ Fin block informations joueur -------------*/
 
+/* Bloc test joueur choix*/
+
+.select-perso{
+    display: flex;
+    justify-content: center;
+}
+
+.div-perso{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+/* Fin bloc test */
 
 .joueur{
     display: block;
@@ -64,6 +80,7 @@
     display: block;
     display: inline-block;
     background-repeat: no-repeat;
+    background-size: cover;
     border: 1px dashed black;
     height: 280px;
     width: 330px;
