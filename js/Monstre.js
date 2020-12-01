@@ -19,7 +19,7 @@ class Ogre extends Monstre{
     constructor(nom, level, pv, mp, vitesse){
         super(nom, level, pv, mp, vitesse)
         this.nom = "Ogre";
-        this.pv = 80;
+        this.pv = 200;
         this.mp = 30;
         this.vitesse = 20;
     }
@@ -40,7 +40,7 @@ class Esprit extends Monstre{
     constructor(nom, level, pv, mp, vitesse){
         super(nom, level, pv, mp, vitesse);
         this.nom = "Esprit";
-        this.pv = 70;
+        this.pv = 100;
         this.mp = 30;
         this.vitesse = 20;
     }

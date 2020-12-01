@@ -32,8 +32,10 @@
         </div>
 
 
-        <!-- Séléction du personnage -->
+        <!-- Séléction du personnage "HEROS"-->
         <form method="POST">
+            
+                                <!-- GUERRIER -->
             <div id="select-perso" class="select-perso">
                 <div id="div-perso" class="div-perso" value="Guerrier">
                     <div class="card">
@@ -45,11 +47,12 @@
                             </p>
                         </div>
                     </div>
+                    <!-- <button class="btnPerso" id="creaPerso">Choisir</button> -->
                 </div>
-    
-                <div id="div-perso" class="div-perso" value="Archer">
-                    <div class="card">
-                        <div class="imgPerso" id="archer"></div>
+                                <!-- ARCHER -->
+            <div id="div-perso" class="div-perso" value="Archer">
+                <div class="card">
+                    <div class="imgPerso" id="archer"></div>
                         <div class="infos-persos" id="infos-persos">
                             <h4 class="card-title">Archer</h4>
                             <p class="card-text">HP:
@@ -57,11 +60,12 @@
                             </p>
                         </div>
                     </div>
+                    <!-- <button class="btnPerso" id="creaPerso2">Choisir</button> -->
                 </div>
-    
-                <div id="div-perso" class="div-perso" value="Ninja">
-                    <div class="card">
-                        <div class="imgPerso" id="ninja"></div>
+                                <!-- NINJA -->
+            <div id="div-perso" class="div-perso" value="Ninja">
+                <div class="card">
+                    <div class="imgPerso" id="ninja"></div>
                         <div class="infos-persos" id="infos-persos">
                             <h4 class="card-title">Ninja</h4>
                             <p class="card-text">HP:
@@ -69,8 +73,10 @@
                             </p>
                         </div>
                     </div>
+                    <!-- <button class="btnPerso" id="creaPerso3">Choisir</button> -->
                 </div>
-                
+
+                                <!-- MAGICIEN -->
                 <div id="div-perso" class="div-perso" value="Magicien">
                     <div class="card">
                         <div class="imgPerso" id="magicien"></div>
@@ -81,28 +87,64 @@
                             </p>
                         </div>
                     </div>
+                    <!-- <button id="creaPerso4">CHOISIR</button> -->
                 </div>
+
+            </div>
+        </form>
+
+        <section class="section_btnPerso">
+            <button class="btnPerso" id="creaPerso">Choix 1</button>
+            <button class="btnPerso" id="creaPerso2">Choix 2</button>
+            <button class="btnPerso" id="creaPerso3">Choix 3</button>
+            <button class="btnPerso" id="creaPerso4">Choix 4</button>
+        </section>
+
+        <!-- Séléction du personnage "VILAIN"-->
+        <form method="POST">
+            <div id="select-perso" class="select-perso">
+                <div id="div-perso" class="div-perso" value="Ogre">
+                    <div class="card">
+                        <div class="imgPerso" id="ogre"></div>
+                        <div class="infos-persos" id="infos-persos">
+                            <h4 class="card-title">Ogre</h4>
+                            <p class="card-text">HP:
+                                <span id="ogreHealth">200</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="div-perso" class="div-perso" value="Gobelin">
+                    <div class="card">
+                        <div class="imgPerso" id="gobelin"></div>
+                        <div class="infos-persos" id="infos-persos">
+                            <h4 class="card-title">Gobelin</h4>
+                            <p class="card-text">HP:
+                                <span id="gobelinHealth">50</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="div-perso" class="div-perso" value="Esprit">
+                    <div class="card">
+                        <div class="imgPerso" id="esprit"></div>
+                        <div class="infos-persos" id="infos-persos">
+                            <h4 class="card-title">Esprit</h4>
+                            <p class="card-text">HP:
+                                <span id="espritHealth">100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </form>
 
         <section class="button">
-            <button id="creaPerso">Choix 1</button>
-            <button id="creaPerso2">Choix 2</button>
-            <button id="creaPerso3">Choix 3</button>
-            <button id="creaPerso4">Choix 4</button>
-        </section>
-
- 
-        <section class="joueur">
-            <div class="imgPerso" id="ogre"></div>
-            <div class="imgPerso" id="gobelin"></div>
-            <div class="imgPerso" id="esprit"></div>
-        </section>
-
-        <section class="button">
-            <button id="creaMonstre">Choix 5</button>
-            <button id="creaMonstre2">Choix 6</button>
-            <button id="creaMonstre3">Choix 7</button>
+            <button class="btnPerso" id="creaMonstre">Choix 5</button>
+            <button class="btnPerso" id="creaMonstre2">Choix 6</button>
+            <button class="btnPerso" id="creaMonstre3">Choix 7</button>
         </section>
 
 
@@ -114,10 +156,11 @@
         </div>
 
         <!-- Affiche Pv et Atk -->
+
     </main>
 
     <footer>
-        <p>Projet réalisé par :</p>
+        <p>Projet réalisé par : BODJE Shadrack emmanuel, COUSDIKIAN Tom, GERNAC-ALEIXO Antonio, PEIXOTO Flavio et DESAI Vishal </p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

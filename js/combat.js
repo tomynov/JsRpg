@@ -45,7 +45,7 @@ $("#creaMonstre3").click(function(){
     console.log(esprit);
 })
 
-    /// FONCTION ATTAQUE /
+    /// FONCTION ATTAQUE ///
 $("#atk").click(function(){
     let guerrier = new Guerrier();
     let orgre = new Ogre();

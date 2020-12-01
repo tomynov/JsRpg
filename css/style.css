@@ -64,6 +64,9 @@
 .div-perso{
     border: 1px solid black;
     margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Fin bloc test */
@@ -118,6 +121,27 @@
     background-image: url(../img/esprit.jpg);
 }
 
+.card-title{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.section_btnPerso{
+    justify-content: space-between;
+}
+
+.btnPerso{
+    letter-spacing: 2px;
+    align-items: center;
+    text-transform: uppercase;
+    margin: auto 95px;
+}
+
+.btnPerso:hover{
+    color: white;
+    background-color: black;
+}
 
 .btn_combat{
     letter-spacing: 2px;
