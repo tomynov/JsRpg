@@ -9,8 +9,9 @@
     <title>JSRPG</title>
 </head>
 <body>
+
     <header>
-        <h1 class="title">Game</h1> 
+        <h1 class="title">THE JAVASCRIPT RPG</h1> 
     </header>
 
     <main>
@@ -30,13 +31,59 @@
 
         </div>
 
-            <!-- Slection Perso -->
-        <section class="joueur">
-            <div class="imgPerso" id="guerrier"></div>
-            <div class="imgPerso" id="archer"></div>
-            <div class="imgPerso" id="ninja"></div>
-            <div class="imgPerso" id="magicien"></div>
-        </section>
+
+        <!-- Séléction du personnage -->
+        <form method="POST">
+            <div id="select-perso" class="select-perso">
+                <div id="div-perso" class="div-perso" value="Guerrier">
+                    <div class="card">
+                        <div class="imgPerso" id="guerrier"></div>
+                        <div class="infos-persos" id="infos-persos">
+                            <h4 class="card-title">Guerrier</h4>
+                            <p class="card-text">HP:
+                                <span id="obiWanHealth">120</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="div-perso" class="div-perso" value="Archer">
+                    <div class="card">
+                        <div class="imgPerso" id="archer"></div>
+                        <div class="infos-persos" id="infos-persos">
+                            <h4 class="card-title">Archer</h4>
+                            <p class="card-text">HP:
+                                <span id="bobaFettHealth">150</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="div-perso" class="div-perso" value="Ninja">
+                    <div class="card">
+                        <div class="imgPerso" id="ninja"></div>
+                        <div class="infos-persos" id="infos-persos">
+                            <h4 class="card-title">Ninja</h4>
+                            <p class="card-text">HP:
+                                <span id="maceWinduHealth">120</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="div-perso" class="div-perso" value="Magicien">
+                    <div class="card">
+                        <div class="imgPerso" id="magicien"></div>
+                        <div class="infos-persos" id="infos-persos">
+                            <h4 class="card-title">Magicien</h4>
+                            <p class="card-text">HP:
+                                <span id="darthVaderHealth">180</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
 
         <section class="button">
             <button id="creaPerso">Choix 1</button>
@@ -74,8 +121,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/combat.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/combat.js"></script>
     <script src="js/Personnage.js"></script>
     <script src="js/Monstre.js"></script>
 </body>

@@ -2,8 +2,16 @@
 
     //// CREATION DES PERSO (console) ////
 
+// $("#creaPerso").click(function(){
+//     var guerrier = new Guerrier();
+//     console.log(guerrier);
+// })
+
+var choice_player = "";
+
 $("#creaPerso").click(function(){
     var guerrier = new Guerrier();
+    choice_player = "guerrier";
     console.log(guerrier);
 })
 
