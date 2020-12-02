@@ -6,6 +6,34 @@ body{
     background-image:url(../img/fond.jpg);
 }
 
+header{
+    top: 0px;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.musique{
+    position: relative;
+    right: 0px;
+    margin-left: 40px;
+
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+    margin: auto 380px;
+    font-family: fantasy;
+    letter-spacing: 4px;
+    font-size: 50px;
+    text-shadow: -1px -1px rgb(173, 214, 252), 1px 1px rgb(62, 115, 175), -3px 0 4px rgb(18, 31, 58);
+    color: rgb(8, 16, 65);
+}
+
 .title{
     text-align: center;
     margin: 50px auto;
