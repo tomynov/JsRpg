@@ -7,29 +7,6 @@
 //     console.log(guerrier);
 // })
 
-var choice_player = "";
-
-$("#creaPerso").click(function(){
-    var guerrier = new Guerrier();
-    choice_player = "guerrier";
-    console.log(guerrier);
-})
-
-$("#creaPerso2").click(function(){
-    var archer = new Archer();
-    console.log(archer);
-})
-
-$("#creaPerso3").click(function(){
-    var ninja = new Ninja();
-    console.log(ninja);
-})
-
-$("#creaPerso4").click(function(){
-    var magicien = new Magician();
-    console.log(magicien);
-})
-
 $("#creaMonstre").click(function(){
     var ogre = new Ogre();
     console.log(ogre);

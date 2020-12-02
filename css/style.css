@@ -1,5 +1,9 @@
 *{
-    margin: 0px;
+    margin: O auto;
+}
+
+body{
+    background-image:url(../img/fond.jpg);
 }
 
 body{
@@ -37,6 +41,12 @@ header{
             /* MAIN */
         
 /* ------ Block informations joueur ------- */
+
+.btn-infos{
+    width: 20%;
+    height: auto;
+    border: 1px solid black;
+}
 
 .modal {
     display: none; /* Hidden by default */
@@ -175,7 +185,8 @@ header{
 
 .section_btnPerso{
     display: block;
-    display: inline-block;
+    /* display: inline-block; */
+    /* display: none; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -189,13 +200,73 @@ header{
     padding: 20px;
     border-radius: 10px;
     margin: auto 70px;
-
 }
 
 .btn_combat:hover{
     color: red;
     background-color: black;
     font-weight: bold;
+}
+
+
+/*Combat*/
+
+.combat{
+    margin-top: 30px;
+    margin-bottom: 30px ;
+    display: none;
+    width: 100%;
+}
+
+.gameScreen{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    width: 70%;
+}
+
+.player{
+    width: 45%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/Guerrier.png);
+}
+
+.monster{
+    width: 45%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/Ogre.png);
+}
+
+.horizontale-line{
+    bottom: 50%;
+    height: 60%;
+    border: 1px solid black;
+}
+
+/* Fin combat*/
+
+
+/* Boutique */
+
+.shop{
+    display: block;
+    width: 20%;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: gray;
+    justify-content: center;
+    text-align: center;
+}
+
+.line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid black;
 }
 
 
