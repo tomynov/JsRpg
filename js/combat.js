@@ -45,13 +45,22 @@ $("#creaMonstre3").click(function(){
     console.log(esprit);
 })
 
-    /// FONCTION ATTAQUE ///
+
+    /// FONCTION COMBAT ///
 $("#atk").click(function(){
-    let guerrier = new Guerrier();
-    let orgre = new Ogre();
-    while (guerrier.pv >0 && orgre.pv >0)
-    {
-        console.log(guerrier);
+    // let archer = new Archer();
+    // let ninja = new Ninja();
+    // let magicien = new Magician();
+    // let gobelin = new Gobelin();
+    // let esprit = new Esprit();
+        Attaque();
+})
+
+    /// FONCTION ATTAQUE ///
+    function Attaque(){
+        let guerrier = new Guerrier();
+        let orgre = new Ogre();
+        console.log(guerrier); 
         console.log(orgre);
         guerrier.pv -= orgre.mp;
         orgre.pv -= guerrier.mp;
@@ -64,4 +73,4 @@ $("#atk").click(function(){
             console.log(guerrier);
         }
     }
-})
+
