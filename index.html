@@ -11,12 +11,27 @@
 <body>
 
     <header>
-        <h1 class="title">THE JAVASCRIPT RPG</h1> 
+        <section class="head">
+            <h1 class="title">THE JAVASCRIPT RPG</h1> 
+            <div class="musique">
+                <audio controls preload="auto" loop autoplay>
+                    <source src="Machine_Heart.mp3">
+                </audio>
+            </div>
+        </section>
     </header>
 
     <main>
+<!-- 
+        <object type="audio/mpeg" width="0" height="0" data="Machine_Heart.mp3">
+            <param name="filename" value="Machine_Heart.mp3" />
+            <param name="autostart" value="true" />
+            <param name="loop" value="false" />
+        </object> -->
+
+
         <!-- Trigger/Open The Modal -->
-        <button id="btn_infos">Open Modal</button>
+        <button id="btn_infos">Caractéristique</button>
 
         <!-- The Modal -->
         <div id="myModal" class="modal">
@@ -38,12 +53,12 @@
                                 <!-- GUERRIER -->
             <div id="select-perso" class="select-perso">
                 <div id="div-perso" class="div-perso" value="Guerrier">
-                    <div class="card">
+                    <div class="card" id="creaPerso">
                         <div class="imgPerso" id="guerrier"></div>
                         <div class="infos-persos" id="infos-persos">
                             <h4 class="card-title">Guerrier</h4>
                             <p class="card-text">HP:
-                                <span id="obiWanHealth">120</span>
+                                <span id="guerrierHealth">120</span>
                             </p>
                         </div>
                     </div>
@@ -51,39 +66,38 @@
                 </div>
                                 <!-- ARCHER -->
             <div id="div-perso" class="div-perso" value="Archer">
-                <div class="card">
+                <div class="card" id="creaPerso2">
                     <div class="imgPerso" id="archer"></div>
-                        <div class="infos-persos" id="infos-persos">
-                            <h4 class="card-title">Archer</h4>
-                            <p class="card-text">HP:
-                                <span id="bobaFettHealth">150</span>
-                            </p>
-                        </div>
+                    <div class="infos-persos" id="infos-persos">
+                        <h4 class="card-title">Archer</h4>
+                        <p class="card-text">HP:
+                            <span id="archerHealth">150</span>
+                        </p>
+                    </div>
                     </div>
                     <!-- <button class="btnPerso" id="creaPerso2">Choisir</button> -->
                 </div>
                                 <!-- NINJA -->
             <div id="div-perso" class="div-perso" value="Ninja">
-                <div class="card">
+                <div class="card" id="creaPerso3">
                     <div class="imgPerso" id="ninja"></div>
                         <div class="infos-persos" id="infos-persos">
                             <h4 class="card-title">Ninja</h4>
                             <p class="card-text">HP:
-                                <span id="maceWinduHealth">120</span>
+                                <span id="ninjaHealth">120</span>
                             </p>
                         </div>
                     </div>
-                    <!-- <button class="btnPerso" id="creaPerso3">Choisir</button> -->
                 </div>
 
                                 <!-- MAGICIEN -->
                 <div id="div-perso" class="div-perso" value="Magicien">
-                    <div class="card">
+                    <div class="card" id="creaPerso4">
                         <div class="imgPerso" id="magicien"></div>
                         <div class="infos-persos" id="infos-persos">
                             <h4 class="card-title">Magicien</h4>
                             <p class="card-text">HP:
-                                <span id="darthVaderHealth">180</span>
+                                <span id="magicienHealth">180</span>
                             </p>
                         </div>
                     </div>
@@ -93,18 +107,11 @@
             </div>
         </form>
 
-        <section class="section_btnPerso">
-            <button class="btnPerso" id="creaPerso">Choix 1</button>
-            <button class="btnPerso" id="creaPerso2">Choix 2</button>
-            <button class="btnPerso" id="creaPerso3">Choix 3</button>
-            <button class="btnPerso" id="creaPerso4">Choix 4</button>
-        </section>
-
         <!-- Séléction du personnage "VILAIN"-->
         <form method="POST">
             <div id="select-perso" class="select-perso">
                 <div id="div-perso" class="div-perso" value="Ogre">
-                    <div class="card">
+                    <div class="card" id="creaMonstre">
                         <div class="imgPerso" id="ogre"></div>
                         <div class="infos-persos" id="infos-persos">
                             <h4 class="card-title">Ogre</h4>
@@ -115,7 +122,7 @@
                     </div>
                 </div>
                 <div id="div-perso" class="div-perso" value="Gobelin">
-                    <div class="card">
+                    <div class="card" id="creaMonstre2">
                         <div class="imgPerso" id="gobelin"></div>
                         <div class="infos-persos" id="infos-persos">
                             <h4 class="card-title">Gobelin</h4>
@@ -127,7 +134,7 @@
                 </div>
     
                 <div id="div-perso" class="div-perso" value="Esprit">
-                    <div class="card">
+                    <div class="card" id="creaMonstre3">
                         <div class="imgPerso" id="esprit"></div>
                         <div class="infos-persos" id="infos-persos">
                             <h4 class="card-title">Esprit</h4>
@@ -141,19 +148,12 @@
             </div>
         </form>
 
-        <section class="button">
-            <button class="btnPerso" id="creaMonstre">Choix 5</button>
-            <button class="btnPerso" id="creaMonstre2">Choix 6</button>
-            <button class="btnPerso" id="creaMonstre3">Choix 7</button>
-        </section>
-
-
         <!-- Pour le mode Combat-->
-        <div class="btn_combat">
-            <button id="atk">Attaquer</button> 
-            <button id="srt">Sort</button> 
-            <button id="run" >Fuir</button> 
-        </div>
+        <section class="section_btnPerso">
+            <button  class="btn_combat" id="atk">Attaquer</button> 
+            <button  class="btn_combat" id="srt">Compétence</button> 
+            <button  class="btn_combat" id="run" >Abandonner</button> 
+        </section class="section_btnPerso">
 
         <!-- Affiche Pv et Atk -->
 
