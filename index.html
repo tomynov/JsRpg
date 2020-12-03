@@ -28,127 +28,79 @@
         <!-- Trigger/Open The Modal -->
         <div id="div_infos" class="div-infos"></div>
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
+        <!-- Le modal -->
+        <div id="myModal" class="modal show-is-img">
 
-        <!-- Modal content -->
+        <!-- Contenu du pop-up modal -->
             <div class="modal-content">
                 <span id="close" class="close">&times;</span>
-                <div id="text_infos">
-
-                </div>
+                <div id="text_infos"></div>
             </div>
-
         </div>
 
 
         <!-- Séléction du personnage "HEROS"-->
-        <form id="showHeroes" method="POST">
+        <form id="showHeroes" class="show-heroes" method="POST">
             
-            <!-- GUERRIER -->
-            <div id="select-perso" class="select-perso">
-            <div id="div-perso" class="div-perso" value="Guerrier">
-            <div class="card" id="creaPerso">
-                <div class="imgPerso" id="guerrier"></div>
-                <div class="infos-persos" id="infos-persos">
-                    <h4 class="card-title">Guerrier</h4>
-                    <p class="card-text">HP:
-                        <span id="guerrierHealth">120</span>
-                    </p>
+            <section id="select-perso" class="select-perso">
+                    <!-- GUERRIER -->
+                <div id="div-perso" class="div-perso" value="Guerrier">
+                <div class="card" id="creaPerso">
+                    <div class="imgPerso" id="guerrier"></div>
+                    <div class="infos-persos" id="infos-persos">
+                        <h4 class="card-title">Guerrier</h4>
+                        <p class="card-text">HP:
+                            <span id="guerrierHealth">120</span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <!-- <button class="btnPerso" id="creaPerso">Choisir</button> -->
-            </div>
+                </div>
                         <!-- ARCHER -->
-            <div id="div-perso" class="div-perso" value="Archer">
-            <div class="card" id="creaPerso2">
-            <div class="imgPerso" id="archer"></div>
-            <div class="infos-persos" id="infos-persos">
-                <h4 class="card-title">Archer</h4>
-                <p class="card-text">HP:
-                    <span id="archerHealth">150</span>
-                </p>
-            </div>
-            </div>
-            <!-- <button class="btnPerso" id="creaPerso2">Choisir</button> -->
-            </div>
-                        <!-- NINJA -->
-            <div id="div-perso" class="div-perso" value="Ninja">
-            <div class="card" id="creaPerso3">
-            <div class="imgPerso" id="ninja"></div>
-                <div class="infos-persos" id="infos-persos">
-                    <h4 class="card-title">Ninja</h4>
-                    <p class="card-text">HP:
-                        <span id="ninjaHealth">120</span>
-                    </p>
+                <div id="div-perso" class="div-perso" value="Archer">
+                    <div class="card" id="creaPerso2">
+                        <div class="imgPerso" id="archer"></div>
+                        <div class="infos-persos" id="infos-persos">
+                            <h4 class="card-title">Archer</h4>
+                            <p class="card-text">HP:
+                                <span id="archerHealth">150</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
+                        <!-- NINJA -->
+                <div id="div-perso" class="div-perso" value="Ninja">
+                    <div class="card" id="creaPerso3">
+                        <div class="imgPerso" id="ninja"></div>
+                            <div class="infos-persos" id="infos-persos">
+                                <h4 class="card-title">Ninja</h4>
+                                <p class="card-text">HP:
+                                    <span id="ninjaHealth">120</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
                         <!-- MAGICIEN -->
-            <div id="div-perso" class="div-perso" value="Magicien">
-            <div class="card" id="creaPerso4">
-                <div class="imgPerso" id="magicien"></div>
-                <div class="infos-persos" id="infos-persos">
-                    <h4 class="card-title">Magicien</h4>
-                    <p class="card-text">HP:
-                        <span id="magicienHealth">180</span>
-                    </p>
+                <div id="div-perso" class="div-perso" value="Magicien">
+                    <div class="card" id="creaPerso4">
+                    <div class="imgPerso" id="magicien"></div>
+                        <div class="infos-persos" id="infos-persos">
+                            <h4 class="card-title">Magicien</h4>
+                            <p class="card-text">HP:
+                                <span id="magicienHealth">180</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- <button id="creaPerso4">CHOISIR</button> -->
-            </div>
 
-            </div>
+            </section> <!--Fin select Perso-->
         </form>
-
-
-
-        <!-- Les personnages vilains ne peuvent etre choisi, il seront choisi par l'algorithme-->
-
-        <!--<form method="POST">
-            <div id="select-perso" class="select-perso">
-            <div id="div-perso" class="div-perso" value="Ogre">
-            <div class="card" id="creaMonstre">
-                <div class="imgPerso" id="ogre"></div>
-                <div class="infos-persos" id="infos-persos">
-                    <h4 class="card-title">Ogre</h4>
-                    <p class="card-text">HP:
-                        <span id="ogreHealth">200</span>
-                    </p>
-                </div>
-            </div>
-            </div>
-            <div id="div-perso" class="div-perso" value="Gobelin">
-            <div class="card" id="creaMonstre2">
-                <div class="imgPerso" id="gobelin"></div>
-                <div class="infos-persos" id="infos-persos">
-                    <h4 class="card-title">Gobelin</h4>
-                    <p class="card-text">HP:
-                        <span id="gobelinHealth">50</span>
-                    </p>
-                </div>
-            </div>
-            </div>
-
-            <div id="div-perso" class="div-perso" value="Esprit">
-            <div class="card" id="creaMonstre3">
-                <div class="imgPerso" id="esprit"></div>
-                <div class="infos-persos" id="infos-persos">
-                    <h4 class="card-title">Esprit</h4>
-                    <p class="card-text">HP:
-                        <span id="espritHealth">100</span>
-                    </p>
-                </div>
-            </div>
-            </div>
-
-            </div>
-        </form>-->
 
         <section id="combat" class="combat">
             <div class="gameScreen">
-                <div id="player" class="player"></div>
+                <div id="player" class="player show-is-img">
+                    <div class="show-img-player" id="#guerrier"></div>
+                </div>
                 <div class="horizontale-line">
                 </div>
                 <div id="monster" class="monster"></div>
@@ -174,27 +126,30 @@
                     <h3> Se regénérer : </h3>
                     <div style="display: flex; justify-content: center;">
                         <div id="HpRest" class="image-boutique image-hp"></div>
-               
                         <div id="MpRest" class="image-boutique image-mp"></div>
-                        
                     </div>
                 </div>
             </section>
         </section>
 
-        <!-- Pour le mode Combat-->
-        <section id="section_btnPerso" class="section_btnPerso">
+        <div class="div-btn-pre-combat">
+            <button  class="btn-pre-combat" id="btn-pre-combat"> Commencer le combat</button>
+        </div>
+
+            <!-- Pour le mode Combat-->
+        <section class="section_btnPerso">
             <button  class="btn_combat" id="atk">Attaquer</button> 
             <button  class="btn_combat" id="srt">Compétence</button> 
             <button  class="btn_combat" id="run" >Abandonner</button> 
         </section class="section_btnPerso">
 
-        <!-- Affiche Pv et Atk -->
+        <div class="divHistory">
+        </div>
 
     </main>
 
     <footer>
-        <p>Projet réalisé par : BODJE Shadrack emmanuel, COUSDIKIAN Tom, GERNAC-ALEIXO Antonio, PEIXOTO Flavio et DESAI Vishal </p>
+        <p>Projet réalisé par : BODJE Shadrack Emmanuel, COUSDIKIAN Tom, GERNAC-ALEIXO Antonio, PEIXOTO Flavio et DESAI Vishal </p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
