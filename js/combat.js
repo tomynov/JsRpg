@@ -7,38 +7,61 @@
 //     console.log(guerrier);
 // })
 
-$("#creaMonstre").click(function(){
-    var ogre = new Ogre();
-    console.log(ogre);
-})
 
-$("#creaMonstre2").click(function(){
-    var gobelin = new Gobelin();
-    console.log(gobelin);
-})
+    /// FONCTION FIGHT ///
 
-$("#creaMonstre3").click(function(){
-    var esprit = new Esprit();
-    console.log(esprit);
-})
+    //Lancement
+/*
+$("#btn-pre-combat").click(function lancement(){
+    classe_perso;
+    //classe_monstre =new Monstre[Gobelin, Esprit, Goule, Ogre, Banshee, DragonBlancAuxYeuxBleus];
+    //let Esprit = Monstre.push(Esprit)
+    //let Monstre = [Gobelin, Esprit, Orgre]
+});
+*/
 
-    /// FONCTION ATTAQUE ///
-$("#atk").click(function(){
-    let guerrier = new Guerrier();
-    let orgre = new Ogre();
-    while (guerrier.pv >0 && orgre.pv >0)
-    {
-        console.log(guerrier);
-        console.log(orgre);
-        guerrier.pv -= orgre.mp;
-        orgre.pv -= guerrier.mp;
-        if (guerrier.pv <= 0){
-            console.log("Loose");
-        }
-        else if (orgre.pv<=0){
-            console.log("Win");
-            guerrier.levelUp();
-            console.log(guerrier);
-        }
+function attaquetest(){
+    if(classe_perso.vitesse < class_monstre.vitesse){
+        classe_perso.pv -= (class_monstre.atk - classe_perso.prot);
     }
+    else{
+        console.log("Vous commencez");
+    }
+}
+
+function FinCombat(){
+    $(".section_btnPerso").css({display: 'none'});
+    $(".btn_combat").css({display: 'none'});
+    $(".div-btn-pre-combat").css({display : 'block'});
+}
+
+    //Combat
+$("#atk").click(function (){
+    // while (classe_perso.pv >0 && class_monstre.pv >0)
+    // {
+        classe_perso.pv -= (class_monstre.atk - classe_perso.prot);
+        class_monstre.pv -= (classe_perso.atk - class_monstre.prot); 
+        console.log(classe_perso.pv);
+        console.log(class_monstre.pv);
+        $(".p-div-infos").remove();
+        PlayerInfo();
+        if (classe_perso.pv <= 0){
+            console.log("Loose");
+            FinCombat();
+            returnLobby();
+        }
+        else if (class_monstre.pv<=0){
+            console.log("Win");
+            classe_perso.levelUp();
+            classe_perso.or +=30;
+            console.log(classe_perso);
+            FinCombat();
+        // }
+        }
+    //lancement();
+})
+
+$("#run").click(function (){
+    FinCombat();
+    returnLobby();
 })
