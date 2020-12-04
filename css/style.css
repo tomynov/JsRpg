@@ -25,20 +25,14 @@ header{
 
 .title{
     text-align: center;
-    margin-bottom: 50px;
-    margin: 30px 380px;
+    margin: 50px auto;
     font-family: fantasy;
-    letter-spacing: 4px;
-    font-size: 40px;
-    text-shadow: -1px -1px rgb(173, 214, 252), 1px 1px rgb(62, 115, 175), -3px 0 4px rgb(18, 31, 58);
-    color: rgb(8, 16, 65);}
-
-            /*** MAIN ***/
-      
-#main{
-    margin: 90px;
+    letter-spacing: 3px;
+    text-shadow: -1px -1px rgb(201, 68, 68), 1px 1px rgb(191, 206, 53), -3px 0 4px #000;
 }
 
+            /*** MAIN ***/
+        
 /* ------ Block informations joueur ------- */
 
 .btn-infos{
@@ -46,7 +40,13 @@ header{
     height: auto;
     border: 1px solid black;
 }
-
+/*#parametre{
+padding-left: 280px;
+width: 20%;
+text-transform: uppercase;
+font-weight: bolder;
+}
+*/
 .modal {
     display: none; 
     position: relative; 
@@ -78,12 +78,11 @@ header{
 }
 
 .div-infos{
-    /* display: flex; */
-    margin: auto 50%;
-    /* width: 20%; */
+    padding-left: 280px;
+    width: 20%;
     text-transform: uppercase;
     font-weight: bolder;
-    justify-content: center;
+    
 }
 
 /* The Close Button */
@@ -249,7 +248,7 @@ header{
 
 .combat{
     margin-top: 30px;
-    margin-bottom: 30px ;
+    margin-bottom: 30px;
     display: none;
     width: 100%;
 }
@@ -269,6 +268,7 @@ header{
     /* background-image: url(../img/Guerrier.png); */
 }
 
+/*Persos*/
 .show-is-img-guerrier{
     background-image: url(../img/Guerrier.png);
 }
@@ -285,12 +285,40 @@ header{
     background-image: url(../img/Magicien.png);
 }
 
+/*Monstres*/
+.show-is-img-ogre{
+    background-image: url(../img/Ogre.png);
+}
+
+.show-is-img-gobelin{
+    background-image: url(../img/Gobelin.png);
+}
+
+.show-is-img-esprit{
+    background-image: url(../img/Esprit.png);
+}
+
+.show-is-img-goule{
+    background-image: url(../img/Gobelin.png);
+    /* a changer avec une image de goule*/
+}
+
+.show-is-img-banshee{
+    background-image: url(../img/Gobelin.png);
+    /*A changer avec une image de banshee*/
+}
+
+.show-is-img-dragon{
+    background-image: url(../img/dragon.jpg);
+    /*A modifier avec une image .png*/
+}
+
 .monster{
     width: 45%;
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../img/Ogre.png);
+    /* background-image: url(../img/Ogre.png); */
 }
 
 .horizontale-line{
@@ -347,16 +375,23 @@ header{
     margin-bottom: 10px;
     width: 100%;
 }
-
+            /* Historique des coups */
+.divHistory{
+    margin-left:30px;
+    color: white;
+}
             /* FOOTER */
 footer{
-    margin-top: 115px;
+    margin-top: 300px;
     letter-spacing: 2px;
     text-align: center;
-    bottom: 0px;
+    bottom: 0;
     position: relative;
     font-weight: bold;
     color: black;
-    background-color: white;
     font-family: fantasy;
+    text-shadow: -1px -1px rgb(252, 173, 173), 1px 1px rgb(62, 115, 175), -3px 0 4px rgb(18, 31, 58);
+    color: rgb(8, 16, 65);
+    
+
 }
