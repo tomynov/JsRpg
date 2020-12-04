@@ -40,7 +40,13 @@ header{
     height: auto;
     border: 1px solid black;
 }
-
+/*#parametre{
+padding-left: 280px;
+width: 20%;
+text-transform: uppercase;
+font-weight: bolder;
+}
+*/
 .modal {
     display: none; 
     position: relative; 
@@ -238,7 +244,6 @@ header{
 
 .combat{
     margin-top: 30px;
-    margin-bottom: 30px ;
     display: none;
     width: 100%;
 }
@@ -336,7 +341,11 @@ header{
     margin-bottom: 10px;
     width: 100%;
 }
-
+            /* Historique des coups */
+.divHistory{
+    margin-left:30px;
+    color: white;
+}
             /* FOOTER */
 footer{
     margin-top: 300px;
