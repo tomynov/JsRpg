@@ -13,7 +13,7 @@ var OrRequiredMagie = 10;
 var OrRequiredRest = 20;
 
 //Numéro de l'ennemi a faire spawn
-var nbr_ennemi = 1;
+var nbr_ennemi = 0;
 var i_boss = 0;
 
 function PlayerInfo(){
@@ -78,7 +78,7 @@ $("#creaPerso3").click(function(){
 
 $("#creaPerso4").click(function(){
     classe_perso = new Magician();
-    console.log(choice_player);
+    console.log(classe_perso);
     choice_player = "magicien";
     startGame();
 })
@@ -166,15 +166,12 @@ $("#MpRest").click(function(){
     }
 })
 
-function AttributsEnnemis(){
-    
-}
-
 
 function CreaEnnemi(){
    
     if (nbr_ennemi == 0){
         class_monstre = new Ogre();
+        document.getElementById('monster').className = "monster show-is-img-ogre"; 
         nbr_ennemi++;
         if(i_boss == 1){
             class_monstre.levelUp();
@@ -182,6 +179,7 @@ function CreaEnnemi(){
     }
     else if( nbr_ennemi == 1){
         class_monstre = new Gobelin();
+        document.getElementById('monster').className = "monster show-is-img-gobelin"; 
         console.log(class_monstre);
         nbr_ennemi++;
         if(i_boss == 1){
@@ -190,6 +188,7 @@ function CreaEnnemi(){
     }
     else if( nbr_ennemi == 2){
         class_monstre = new Esprit();
+        document.getElementById('monster').className = "monster show-is-img-esprit"; 
         console.log(class_monstre);
         nbr_ennemi++;
         if(i_boss == 1){
@@ -199,6 +198,7 @@ function CreaEnnemi(){
     }
     else if (nbr_ennemi == 3){
         class_monstre = new Goule();
+        document.getElementById('monster').className = "monster show-is-img-goule"; 
         console.log(class_monstre);
         nbr_ennemi++;
         if(i_boss == 1){
@@ -207,6 +207,7 @@ function CreaEnnemi(){
     }
     else if (nbr_ennemi == 4){
         class_monstre = new Banshee();
+        document.getElementById('monster').className = "monster show-is-img-banshee"; 
         console.log(class_monstre);
         if(i_boss == 1){
             class_monstre.levelUp();
@@ -220,6 +221,7 @@ function CreaEnnemi(){
     }
     if(i_boss==2){
         class_monstre = new Dragon();
+        document.getElementById('monster').className = "monster show-is-img-dragon"; 
         console.log(class_monstre);
         console.log("Vous êtes une légende !");
         returnLobby();
@@ -257,6 +259,7 @@ function startGame(){
 }
 
 function returnLobby(){
+    nbr_ennemi = 0;
     $("#showHeroes").css({display:'flex'});
     $("#section_btnPerso").css({display:'none'});
     $("#combat").css({display : 'none'});
