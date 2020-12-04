@@ -41,8 +41,8 @@ $("#atk").click(function (){
     // {
         classe_perso.pv -= (class_monstre.atk - classe_perso.prot);
         class_monstre.pv -= (classe_perso.atk - class_monstre.prot); 
-        console.log(classe_perso.pv);
-        console.log(class_monstre.pv);
+        console.log("Vous avez " + classe_perso.pv + " pv");
+        console.log("L'adversaire à encore " + class_monstre.pv + "pv !");
         $(".p-div-infos").remove();
         PlayerInfo();
         if (classe_perso.pv <= 0){

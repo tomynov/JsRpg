@@ -48,52 +48,41 @@ $("#div_infos").click(function(){
     }
 })
 
-$("#parametre").click(function(){
-    modal.style.display = "block";
-    $("#parametre_info").append('<button>SAVE</button>')
-})
-
 $("#close").click(function(){
     modal.style.display = "none";
     $(".p-infos").remove();
 })
 
 // Création des classes
-if (localStorage.length == 0){
-    console.log("dkjazbhjd"); ///SUPPRIMER
-    $("#creaPerso").click(function(){
-        classe_perso = new Guerrier();
-        console.log(classe_perso);
-        choice_player = "guerrier";
-        startGame(); 
-    })
 
-    $("#creaPerso2").click(function(){
-        classe_perso = new Archer();
-        console.log(classe_perso);
-        choice_player = "archer";
-        startGame();
-    })
+$("#creaPerso").click(function(){
+    classe_perso = new Guerrier();
+    console.log(classe_perso);
+    choice_player = "guerrier";
+    startGame(); 
+})
 
-    $("#creaPerso3").click(function(){
-        classe_perso = new Ninja();
-        console.log(classe_perso);
-        choice_player = "ninja";
-        startGame();
-    })
+$("#creaPerso2").click(function(){
+    classe_perso = new Archer();
+    console.log(classe_perso);
+    choice_player = "archer";
+    startGame();
+})
 
-    $("#creaPerso4").click(function(){
-        classe_perso = new Magician();
-        console.log(choice_player);
-        choice_player = "magicien";
-        startGame();
-    })
-}
-else{
-    classe_perso = localStorage["classe"];
-    console.log("Yala"); //SUPPRIMER
-    start_game();
-}
+$("#creaPerso3").click(function(){
+    classe_perso = new Ninja();
+    console.log(classe_perso);
+    choice_player = "ninja";
+    startGame();
+})
+
+$("#creaPerso4").click(function(){
+    classe_perso = new Magician();
+    console.log(choice_player);
+    choice_player = "magicien";
+    startGame();
+})
+
 
         /////////////////////
         // Boutique

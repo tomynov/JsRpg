@@ -25,14 +25,20 @@ header{
 
 .title{
     text-align: center;
-    margin: 50px auto;
+    margin-bottom: 50px;
+    margin: 30px 380px;
     font-family: fantasy;
-    letter-spacing: 3px;
-    text-shadow: -1px -1px rgb(201, 68, 68), 1px 1px rgb(191, 206, 53), -3px 0 4px #000;
-}
+    letter-spacing: 4px;
+    font-size: 40px;
+    text-shadow: -1px -1px rgb(173, 214, 252), 1px 1px rgb(62, 115, 175), -3px 0 4px rgb(18, 31, 58);
+    color: rgb(8, 16, 65);}
 
             /*** MAIN ***/
-        
+      
+#main{
+    margin: 90px;
+}
+
 /* ------ Block informations joueur ------- */
 
 .btn-infos{
@@ -40,13 +46,7 @@ header{
     height: auto;
     border: 1px solid black;
 }
-/*#parametre{
-padding-left: 280px;
-width: 20%;
-text-transform: uppercase;
-font-weight: bolder;
-}
-*/
+
 .modal {
     display: none; 
     position: relative; 
@@ -73,12 +73,17 @@ font-weight: bolder;
 
 } 
 
+#sectInfos{
+    display: flex;
+}
+
 .div-infos{
-    padding-left: 280px;
-    width: 20%;
+    /* display: flex; */
+    margin: auto 50%;
+    /* width: 20%; */
     text-transform: uppercase;
     font-weight: bolder;
-    
+    justify-content: center;
 }
 
 /* The Close Button */
@@ -244,6 +249,7 @@ font-weight: bolder;
 
 .combat{
     margin-top: 30px;
+    margin-bottom: 30px ;
     display: none;
     width: 100%;
 }
@@ -341,23 +347,16 @@ font-weight: bolder;
     margin-bottom: 10px;
     width: 100%;
 }
-            /* Historique des coups */
-.divHistory{
-    margin-left:30px;
-    color: white;
-}
+
             /* FOOTER */
 footer{
-    margin-top: 300px;
+    margin-top: 115px;
     letter-spacing: 2px;
     text-align: center;
-    bottom: 0;
+    bottom: 0px;
     position: relative;
     font-weight: bold;
     color: black;
+    background-color: white;
     font-family: fantasy;
-    text-shadow: -1px -1px rgb(252, 173, 173), 1px 1px rgb(62, 115, 175), -3px 0 4px rgb(18, 31, 58);
-    color: rgb(8, 16, 65);
-    
-
 }

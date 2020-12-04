@@ -10,30 +10,26 @@
 </head>
 <body>
 
-    <header >
-        <div class="musique">
-            <audio controls preload="auto" loop autoplay>
-                <source src="Machine_Heart.mp3">
-            </audio>
-        </div>
-
+    <header>
         <section class="head">
             <h1 class="title">THE JAVASCRIPT RPG</h1> 
+            <div class="musique">
+                <audio controls preload="auto" loop autoplay>
+                    <source src="Machine_Heart.mp3">
+                </audio>
+            </div>
         </section>
-        <!--
-        <div id="parametre" class="parametre">
-                <h2>Parametre</h2>
-        </div>
-        -->
     </header>
-    <!-- parametre -->
+    
+    </header>
 
-
-    <main>
+    <main id="main">
         <!-- Trigger/Open The Modal -->
+        <section id="sectInfos">
         <div id="div_infos" class="div-infos"></div>
+        </section>
 
-        <!-- Le modal -->
+            <!-- Le modal -->
         <div id="myModal" class="modal show-is-img">
 
         <!-- Contenu du pop-up modal -->
@@ -142,16 +138,15 @@
         </div>
 
             <!-- Pour le mode Combat-->
-    <div >
         <section class="section_btnPerso">
-            <button  class="btn_combat btnHistory" id="atk">Attaquer</button> 
+            <button  class="btn_combat" id="atk">Attaquer</button> 
             <button  class="btn_combat" id="srt">Compétence</button> 
             <button  class="btn_combat" id="run" >Abandonner</button> 
         </section class="section_btnPerso">
 
         <div class="divHistory">
         </div>
-    </div>
+
     </main>
 
     <footer>
@@ -159,7 +154,6 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/save.js"></script>
     <script src="js/main.js"></script>
     <script src="js/combat.js"></script>
     <script src="js/Personnage.js"></script>
