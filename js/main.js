@@ -54,34 +54,38 @@ $("#close").click(function(){
 })
 
 // Création des classes
+if (localStorage.length == 0){
+    $("#creaPerso").click(function(){
+        classe_perso = new Guerrier();
+        console.log(classe_perso);
+        choice_player = "guerrier";
+        startGame(); 
+    })
 
-$("#creaPerso").click(function(){
-    classe_perso = new Guerrier();
-    console.log(classe_perso);
-    choice_player = "guerrier";
-    startGame(); 
-})
+    $("#creaPerso2").click(function(){
+        classe_perso = new Archer();
+        console.log(classe_perso);
+        choice_player = "archer";
+        startGame();
+    })
 
-$("#creaPerso2").click(function(){
-    classe_perso = new Archer();
-    console.log(classe_perso);
-    choice_player = "archer";
-    startGame();
-})
+    $("#creaPerso3").click(function(){
+        classe_perso = new Ninja();
+        console.log(classe_perso);
+        choice_player = "ninja";
+        startGame();
+    })
 
-$("#creaPerso3").click(function(){
-    classe_perso = new Ninja();
-    console.log(classe_perso);
-    choice_player = "ninja";
-    startGame();
-})
-
-$("#creaPerso4").click(function(){
-    classe_perso = new Magician();
-    console.log(classe_perso);
-    choice_player = "magicien";
-    startGame();
-})
+    $("#creaPerso4").click(function(){
+        classe_perso = new Magician();
+        console.log(classe_perso);
+        choice_player = "magicien";
+        startGame();
+    })
+}
+else{
+//function init the class
+}
 
 
         /////////////////////
