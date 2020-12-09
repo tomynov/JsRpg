@@ -15,21 +15,16 @@
             <audio controls preload="auto" loop autoplay>
                 <source src="Machine_Heart.mp3">
             </audio>
+        </div>
         <section class="head">
             <h1 class="title">THE JAVASCRIPT RPG</h1> 
-            
-            </div>
-    
         </section>
-    
-    </header>
-    
     </header>
 
     <main id="main">
         <!-- Trigger/Open The Modal -->
         <section id="sectInfos">
-        <div id="div_infos" class="div-infos"></div>
+        <div id="div_infos" class="div-infos" title="cliquez ici"></div>
         </section>
 
             <!-- Le modal -->
@@ -54,7 +49,7 @@
                     <div class="infos-persos" id="infos-persos">
                         <h4 class="card-title">Guerrier</h4>
                         <p class="card-text">HP:
-                            <span id="guerrierHealth">120</span>
+                            <span id="guerrierHealth">250</span>
                         </p>
                     </div>
                 </div>
@@ -78,7 +73,7 @@
                             <div class="infos-persos" id="infos-persos">
                                 <h4 class="card-title">Ninja</h4>
                                 <p class="card-text">HP:
-                                    <span id="ninjaHealth">120</span>
+                                    <span id="ninjaHealth">260</span>
                                 </p>
                             </div>
                         </div>
@@ -91,7 +86,7 @@
                         <div class="infos-persos" id="infos-persos">
                             <h4 class="card-title">Magicien</h4>
                             <p class="card-text">HP:
-                                <span id="magicienHealth">180</span>
+                                <span id="magicienHealth">190</span>
                             </p>
                         </div>
                     </div>
@@ -120,17 +115,17 @@
                     <div>
                         <h3> Que souhaitez-vous améliorer ? </h3>
                         <div style="display:flex; justify-content: center;">
-                            <div id="WeaponUp" class="image-boutique image-weapon"></div>
-                            <div id="ProtUp" class="image-boutique image-portect"></div>
-                            <div id="MagUp" class="image-boutique image-magie"></div>
+                            <div id="WeaponUp" class="image-boutique image-weapon" title="Arme+"></div>
+                            <div id="ProtUp" class="image-boutique image-portect" title="Def+"></div>
+                            <div id="MagUp" class="image-boutique image-magie" title="Magie+"></div>
                         </div>
                     </div>
 
                     <div class="line"></div>
                     <h3> Se regénérer : </h3>
                     <div style="display: flex; justify-content: center;">
-                        <div id="HpRest" class="image-boutique image-hp"></div>
-                        <div id="MpRest" class="image-boutique image-mp"></div>
+                        <div id="HpRest" class="image-boutique image-hp" title="Pv 100%"></div>
+                        <div id="MpRest" class="image-boutique image-mp" title="Magie 100%"></div>
                     </div>
                 </div>
             </section>
@@ -144,11 +139,15 @@
         <section class="section_btnPerso">
             <button  class="btn_combat" id="atk">Attaquer</button> 
             <button  class="btn_combat" id="srt">Compétence</button> 
+            <button  class="btn_combat" id="info">Info Joueur</button> 
             <button  class="btn_combat" id="run" >Abandonner</button> 
         </section class="section_btnPerso">
 
         <div class="divHistory">
         </div>
+        
+        <section id="affiche_combat">
+        </section>
 
     </main>
 
