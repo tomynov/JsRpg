@@ -1,5 +1,12 @@
 # JsRpg
 
+Reste à faire :
+   Bouton "infos joueur" -> texte dans l'encadré
+   Au clic d'une image dans la boutique -> texte dans l'encadré
+   Level Up ennemis (léger/faible)
+Autre Bonus :
+
+
 Points à développer :
 
 --> Informations du personnage (nom, PV, MP, Or) + pop-up (nom, classe, PV, MP, Att, Def, Magie, Def magique, Esquive, Vitesse)
