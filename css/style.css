@@ -6,6 +6,7 @@ body{
     background-image:url(../img/fond.jpg);
 }
 
+        /*** HEADER ***/
 header{
     top: 0px;
 }
@@ -20,22 +21,23 @@ header{
     position: relative;
     right: 0px;
     margin-left: 40px;
-
 }
 
 .title{
     text-align: center;
-    margin-bottom: 50px;
-    margin: auto 380px;
-    font-family: fantasy; 
-    letter-spacing: 4px;
-    font-size: 50px;
+    margin: 50px auto;
+    font-family: fantasy;
+    letter-spacing: 3px;
     text-shadow: -1px -1px rgb(173, 214, 252), 1px 1px rgb(62, 115, 175), -3px 0 4px rgb(18, 31, 58);
-    color: rgb(8, 16, 65);
+    color: rgb(8, 16, 65);}
+
+            /*** MAIN ***/
+/* ------ Block informations joueur ------- */
+
+#main{
+    margin: 90px 90px 0px;
 }
 
-            /* MAIN */
-        
 /* ------ Block informations joueur ------- */
 
 .btn-infos{
@@ -45,31 +47,50 @@ header{
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none; 
+    position: relative; 
+    padding-left: 45%;
+    padding-right: 40%;
+    z-index: 1050; 
+    padding-top: 200px; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    background-image: url(../img/Magicien.png);
+    background-repeat: no-repeat;
 }
   
-/* Modal Content */
+    /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
+    
     border: 1px solid #888;
-    width: 80%;
+    position: relative;
+    pointer-events: auto;
+    background-color:black;
+    font-family: fantasy;
+    text-align: center;
+    text-transform: uppercase;
+
+} 
+
+#sectInfos{
+    display: none;
+    padding-left: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+.div-infos{
+    width: 25%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(37, 37, 37, 0.801);
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -82,9 +103,48 @@ header{
     cursor: pointer;
 }
 
+
+/* Boutique */
+.shop{
+    display: block;
+    padding-top: 90px;
+    width: 80%;
+    margin-left: 170px;
+    justify-content: center;
+    text-align: center;    
+}
+
+.title_shop{
+    font-size: 30px;
+}
+
+.text_shop{
+    font-size: 22px;
+}
+
+.image-boutique{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: auto 10px;
+}
+
+/*
+#MpRest{
+    height: 76%;
+}
+*/
+
 /*------------ Fin block informations joueur -------------*/
 
-/* Bloc test joueur choix*/
+/* Bloc joueur choix*/
+
+.show-heroes{
+    display: flex;
+    justify-content: center;
+}
 
 .select-perso{
     display: flex;
@@ -99,7 +159,7 @@ header{
     text-align: center;
 }
 
-/* Fin bloc test */
+/* Fin Bloc joueur choix*/
 
 .joueur{
     display: block;
@@ -119,10 +179,9 @@ header{
     width: 330px;
     margin-left: auto;
     margin-right: auto;
-    /* align-items: center; */
     justify-content: center;
 }
-
+        /* Images */
 #guerrier{
     background-image: url(../img/guerrier.png);
 }
@@ -163,11 +222,12 @@ header{
     border: solid black 3px;
 }
 
+            /*     BOUTON    */
+
 .btnPerso{
     letter-spacing: 2px;
     text-transform: uppercase;
     z-index: 1;
-    /* opacity: 0; */
     /* display: none; */
 }
 
@@ -189,13 +249,32 @@ header{
     text-align: center;
 }
 
-.btn_combat{
+.div-btn-pre-combat{
+    display: none;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-pre-combat{
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 18px;
     padding: 20px;
     border-radius: 10px;
     margin: auto 70px;
+    margin-top: 50px;
+}
+
+.btn_combat{
+    display: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto 70px;
+    margin-top: 20px;
 }
 
 .btn_combat:hover{
@@ -203,13 +282,12 @@ header{
     background-color: black;
     font-weight: bold;
 }
+            /* FIN BOUTON */
 
-
-/*Combat*/
+    /*Combat*/
 
 .combat{
     margin-top: 30px;
-    margin-bottom: 30px ;
     display: none;
     width: 100%;
 }
@@ -218,7 +296,7 @@ header{
     display: flex;
     justify-items: center;
     text-align: center;
-    width: 70%;
+    width: 150%;
 }
 
 .player{
@@ -226,7 +304,49 @@ header{
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
+    /* background-image: url(../img/Guerrier.png); */
+}
+
+/*Persos*/
+.show-is-img-guerrier{
     background-image: url(../img/Guerrier.png);
+}
+
+.show-is-img-archer{
+    background-image: url(../img/Archer.png);
+}
+
+.show-is-img-ninja{
+    background-image: url(../img/Ninja.png);
+}
+
+.show-is-img-magicien{
+    background-image: url(../img/Magicien.png);
+}
+
+/*Monstres*/
+.show-is-img-ogre{
+    background-image: url(../img/Ogre.png);
+}
+
+.show-is-img-gobelin{
+    background-image: url(../img/Gobelin.png);
+}
+
+.show-is-img-esprit{
+    background-image: url(../img/Esprit.png);
+}
+
+.show-is-img-goule{
+    background-image: url(../img/Goule.png);
+}
+
+.show-is-img-banshee{
+    background-image: url(../img/Banshee.png);
+}
+
+.show-is-img-dragon{
+    background-image: url(../img/dragon.png);
 }
 
 .monster{
@@ -234,45 +354,69 @@ header{
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../img/Ogre.png);
 }
 
 .horizontale-line{
     bottom: 50%;
-    height: 60%;
+    height: 75%;
     border: 1px solid black;
 }
-
 /* Fin combat*/
 
+.image-weapon{
+    background-image: url(../img/shop.png);
+}
 
-/* Boutique */
+.image-portect{
+    background-image: url(../img/protec.png);
+}
 
-.shop{
-    display: block;
-    width: 20%;
-    height: auto;
-    border: 1px solid black;
-    box-shadow: gray;
-    justify-content: center;
-    text-align: center;
+.image-magie{
+    background-image: url(../img/potion.png);
+}
+
+.image-hp{
+    background-image: url(../img/hp.jpg);
+}
+
+.image-mp{
+    background-image: url(../img/mana.png);
 }
 
 .line{
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
-    border: 1px solid black;
+
+}
+            /* Historique des coups */
+#affiche_combat{
+    width: 90%;
+    margin:30px;
+    background-color: rgba(37, 37, 37, 0.801);
+    z-index: 1;
+    padding-left: 15px;
+    text-align: justify;
+}
+
+.p-hist{
+    z-index: 3;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: white;
 }
 
 
             /* FOOTER */
 footer{
-    margin-top: 10px;
+    margin-top: 80px;
     letter-spacing: 2px;
-    text-align: justify;
+    text-align: center;
     bottom: 0;
     position: relative;
     font-weight: bold;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.185);
+    color: white;
+    /* font-family: fantasy; */
+    /* text-shadow: -1px -1px rgb(252, 173, 173), 1px 1px rgb(62, 115, 175), -3px 0 4px rgb(18, 31, 58); */
 }
