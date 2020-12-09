@@ -88,6 +88,7 @@ $("#srt").click(function(){
 //Donne les infos du personnages
 $("#info").click(function (){
     console.log(classe_perso);
+    //Hist.push(classe_perso);
 })
 
     //Rafraichit la page lorsque l'utisateur abandonne

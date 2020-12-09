@@ -250,11 +250,8 @@ function CreaEnnemi(){
             i_boss++;
             console.log(i_boss);
         }
-        // else{
-            
-        // }
     }
-    if(i_boss==4){
+    if(i_boss==4 || nbr_ennemi == 5){
         console.log("Le BOSS vient d'arriver")
         class_monstre = new Dragon();
         document.getElementById('monster').className = "monster show-is-img-dragon"; 
@@ -312,6 +309,16 @@ function AfficheHistoriqueCombat(){
     if (Hist.length < 6){
         Hist.push(" " + " L'ennemi attaque : "+ classe_perso.nom + " à encore " + classe_perso.pv + " pv");
         Hist.push(" " + " Vous attaquez : "+ class_monstre.nom + " à encore " + class_monstre.pv + " pv");
+        if(class_monstre.pv<=0 && classe_perso.pv>0)
+        {
+            Hist.shift();
+            Hist.push("You Win !");
+        }
+        else if (classe_perso.pv<=0)
+        {
+            Hist.shift();
+            Hist.push("You loose !");
+        }
         console.log(Hist);
         $(".p-hist").remove();
         for (i = 0; i<Hist.length; i++){

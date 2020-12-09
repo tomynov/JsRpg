@@ -35,7 +35,7 @@ header{
 /* ------ Block informations joueur ------- */
 
 #main{
-    margin: 90px 90px 0px;
+    margin: 50px 90px 0px;
 }
 
 /* ------ Block informations joueur ------- */
@@ -358,8 +358,9 @@ header{
 
 .horizontale-line{
     bottom: 50%;
-    height: 75%;
-    border: 1px solid black;
+    height: 100%;
+    border: 2px solid black;
+    width: 0%;
 }
 /* Fin combat*/
 
