@@ -24,14 +24,9 @@ function PlayerInfo(){
 //Modal informations player
 $("#div_infos").click(function(){
     modal.style.display = "block";
-<<<<<<< HEAD
-    var infos = ['PV : ', 'MP : ', 'Vitesse : ', 'Info : '];
-    for(i=0; i < infos.length; i++ ){
-=======
     var infos2 = ['NOM : ', 'PV : ', 'MP : ', 'OR : '];
     var infos2_nbr = [classe_perso.nom, classe_perso.pv, classe_perso.mp, classe_perso.or];
     for(i=0; i < infos2.length; i++ ){
->>>>>>> 9c260fc8f87a48b867a6b05c29bbe1c70cde81a4
         $("#text_infos").append(`
             <p class="p-infos"> ${infos2[i]} ${infos2_nbr[i]} </p>
         `)
