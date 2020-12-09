@@ -4,6 +4,7 @@ Reste à faire :
    Bouton "infos joueur" -> texte dans l'encadré
    Au clic d'une image dans la boutique -> texte dans l'encadré
    Level Up ennemis (léger/faible)
+   Modal : Def "Undefined" ?
 Autre Bonus :
 
 
