@@ -354,7 +354,6 @@ function startGame(){
 /////////////////////
 function AfficheHistoriqueCombat(){
     if (Hist.length <= 6){
-        // VitesseAttaque();
         if(class_monstre.pv<=0 && classe_perso.pv>0)
         {
             Hist.shift();
