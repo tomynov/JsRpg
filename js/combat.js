@@ -121,18 +121,18 @@ $("#atk").click(function (){
 
     //Attaque magique
 $("#srt").click(function(){
-
-
     if (classe_perso.mp > 0){
         if (classe_perso.vitesse >= class_monstre.vitesse){
             EsquiveMpMonstre(100);
             verif();
             EsquiveJoueur(100);
+            classe_perso.mp -= 1;
         }
         else{
             EsquiveJoueur(100);
             verif();
             EsquiveMpMonstre(100);
+            classe_perso.mp -= 1;
         }
         AfficheHistoriqueCombat();
         $(".p-div-infos").remove();
@@ -141,30 +141,6 @@ $("#srt").click(function(){
     else{
         alert("Vous n'avez pas assez de mp");
     }
-    
-
-    // classe_perso.pv -= Math.abs(class_monstre.atk - classe_perso.prot);
-    //     class_monstre.pv -= Math.abs(classe_perso.mag - class_monstre.prot);
-    //     classe_perso.mp -= 1;
-
-    //     AfficheHistoriqueCombat();
-    //     $(".p-div-infos").remove();
-    //     PlayerInfo();        
-
-    //     if (classe_perso.pv <= 0){
-    //         console.log("Loose");
-    //         FinCombat();
-    //         document.location.reload();
-    //         localStorage.clear();
-    //     }
-    //     else if (class_monstre.pv<=0){
-    //         console.log("Win");
-    //         classe_perso.levelUp();
-    //         classe_perso.or +=30;
-    //         console.log(classe_perso);
-    //         FinCombat();
-    //         ClearHistorique();
-    //     }
 })
 
 //Donne les infos du personnages
