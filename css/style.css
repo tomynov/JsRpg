@@ -212,7 +212,7 @@ header{
 .div-perso:hover{
     opacity: 1;
     z-index: 3;
-    transition: 1.5s;
+    transition: 1s;
     border: solid black 3px;
 }
 
