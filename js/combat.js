@@ -48,17 +48,6 @@ function EsquiveMonstre(max){
 }
 
 //Calculer si le monstre esquive le sort du joueur
-function EsquiveMonstreMp(max){
-    getRandomInt(max);
-    if (class_monstre.esquive < esquive_random){
-        class_monstre.pv -= Math.abs(classe_perso.mp - class_monstre.prot); 
-        Hist.push(" " + " Vous attaquez : "+ class_monstre.nom + " à encore " + class_monstre.pv + " pv");
-    }
-    else{
-        Hist.push("Vous avez raté votre sort !")
-    }
-}
-
 function EsquiveMpMonstre(max){
     getRandomInt(max);
     if (class_monstre.esquive < esquive_random){
