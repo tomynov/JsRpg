@@ -1,39 +1,20 @@
-# JsRpg
+Groupe : COUSDIKIAN Tom, PEIXOTO Flavio, GERNAC-ALEIXO Antonio, DESAI Vishal et BODJE Shadrack Emmanuel
 
-Reste à faire :
+!! Quelques points a savoir afin de comprendre le fonctionnement de notre RPG !!
 
-Autre Bonus :
+--> Une partie est lancée en choisissant un héros (guerrier, archer, ninja ou magicien)
 
+--> Les combats se lancent lorsque le joueur le décide via un bouton de lancement. L'interface de comabt comporte trois boutons : attaquer (attaque simple),
+compétences (attaque utilisant des mp) et abandon (fin de jeu et retour au lobby pour choisir un nouveau perso)
 
+--> Lors d'un combat impossible d'utiliser la boutique, en dehors il est possible. De l'or est requis afin d'utiliser la boutique
 
-Points à développer :
+!! --> Le localstorage est utilisé dans notre RPG, tant que vous n'avez pas abandonner ou perdu vous retrouverez votre progression en relançant la page (vous pouvez donc quitter et reprendre n'importe quand) !!
 
---> Informations du personnage (nom, PV, MP, Or) + pop-up (nom, classe, PV, MP, Att, Def, Magie, Def magique, Esquive, Vitesse)
-//nom :
+--> Trois vagues d'ennemis apparaitront (vous tomberez sur les mêmes monstres trois fois, attention ils gagnent en lvl). Lorsque les trois vagues ont été vaincus vous affronterez le BOSS FINAL
 
---> Boutique a droite de l'écran (améliore les stats, demande d'or plus grande a chaque amélioration d'une stat): -> améliorer l'arme, la protection, la magie /~~~/ -> restaurer les PV et MP
-//nom :
+A VOUS DE JOUER
 
---> Historique des actions (actions des persos)
-//nom : Tom
-
---> Boutons actions persos (attaquer, défendre, utiliser un sort, fuir)
-//nom : Tom
-
---> Création classe personnage (classes à voir)
-//nom : Flavio
-
---> Création classe Monstre (classes à voir)
-//nom : Flavio
-
---> Bouton lancement combat (adaptation des stats Monstre ->10% de diffréence avec le personnage)
-//nom : Flavio
-
---> Fonction combat (gérer les PV et MP et vitesse a prendre en compte pour le premier a attaquer / gain d'or)
-//nom :
-
---> Stockage des informations de partie dans un localstorage ou fichier csv
-//nom : Antonio
 
 
             SUJET
