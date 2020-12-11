@@ -99,7 +99,7 @@ if(localStorage.length == 0){
     })
     
     $("#creaPerso4").click(function(){
-        classe_perso = new Magician();
+        classe_perso = new Magicien();
         console.log(classe_perso);
         choice_player = "magicien";
         startGame();
