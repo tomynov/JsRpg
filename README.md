@@ -2,7 +2,7 @@ Groupe : COUSDIKIAN Tom, PEIXOTO Flavio, GERNAC-ALEIXO Antonio, DESAI Vishal et 
 
  Important !!!!
  
- Avant de lancer le projet vérifier depuis la console que le localstorage est vide ("localstorage;") si il n'est pas vide faire : "localstorage.clear();" puis rafraichir la page avec F5
+ Avant de lancer le projet vérifier depuis la console que le localstorage est vide ("localstorage;") s'il n'est pas vide faire : "localstorage.clear();" puis rafraichir la page avec F5
  
 
  Quelques points a savoir afin de comprendre le fonctionnement de notre RPG 
