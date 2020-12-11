@@ -36,6 +36,7 @@ header{
 
 #main{
     margin: 50px 90px 0px;
+    height: 100%;
 }
 
 /* ------ Block informations joueur ------- */
@@ -107,9 +108,9 @@ header{
 /* Boutique */
 .shop{
     display: block;
-    padding-top: 90px;
+    padding-top: 30px;
     width: 80%;
-    margin-left: 170px;
+    margin-left: 270px;
     justify-content: center;
     text-align: center;    
 }
@@ -130,12 +131,6 @@ header{
     height: 50px;
     margin: auto 10px;
 }
-
-/*
-#MpRest{
-    height: 76%;
-}
-*/
 
 /*------------ Fin block informations joueur -------------*/
 
@@ -174,7 +169,6 @@ header{
     display: inline-block;
     background-repeat: no-repeat;
     background-size: cover;
-    /* border: 1px dashed black; */
     height: 280px;
     width: 330px;
     margin-left: auto;
@@ -228,7 +222,6 @@ header{
     letter-spacing: 2px;
     text-transform: uppercase;
     z-index: 1;
-    /* display: none; */
 }
 
 .card-title{
@@ -236,13 +229,10 @@ header{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    /* box-shadow: 10px 10px; */
 }
 
 .section_btnPerso{
     display: block;
-    /* display: inline-block; */
-    /* display: none; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -264,6 +254,12 @@ header{
     border-radius: 10px;
     margin: auto 70px;
     margin-top: 50px;
+    opacity: 0.7;
+}
+
+.btn-pre-combat:hover{
+    opacity: 1;
+    transition: 0.8s;
 }
 
 .btn_combat{
@@ -304,7 +300,6 @@ header{
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-image: url(../img/Guerrier.png); */
 }
 
 /*Persos*/
@@ -410,14 +405,13 @@ header{
 
             /* FOOTER */
 footer{
-    margin-top: 80px;
+    margin-top: 55px;
     letter-spacing: 2px;
     text-align: center;
     bottom: 0;
+    width: 100%;
     position: relative;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.185);
     color: white;
-    /* font-family: fantasy; */
-    /* text-shadow: -1px -1px rgb(252, 173, 173), 1px 1px rgb(62, 115, 175), -3px 0 4px rgb(18, 31, 58); */
 }
