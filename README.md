@@ -15,7 +15,7 @@ Points à développer :
 //nom :
 
 --> Historique des actions (actions des persos)
-//nom :
+//nom : Tom
 
 --> Boutons actions persos (attaquer, défendre, utiliser un sort, fuir)
 //nom : Tom
@@ -27,7 +27,7 @@ Points à développer :
 //nom : Flavio
 
 --> Bouton lancement combat (adaptation des stats Monstre ->10% de diffréence avec le personnage)
-//nom :
+//nom : Flavio
 
 --> Fonction combat (gérer les PV et MP et vitesse a prendre en compte pour le premier a attaquer / gain d'or)
 //nom :
