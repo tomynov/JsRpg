@@ -28,7 +28,7 @@ function EsquiveJoueur(max){
     getRandomInt(max);
     if (classe_perso.esquive < esquive_random){
         classe_perso.pv -= Math.abs(class_monstre.atk - classe_perso.prot);
-        Hist.push(" " + " L'ennemi attaque : "+ classe_perso.nom + " à encore " + classe_perso.pv + " pv");
+        Hist.push(" " + " L'ennemi attaque : "+ classe_perso.nom + " à " + classe_perso.pv + " pv");
     }
     else{
         Hist.push("L'ennemi a raté son attaque !")
@@ -40,7 +40,7 @@ function EsquiveMonstre(max){
     getRandomInt(max);
     if (class_monstre.esquive < esquive_random){
         class_monstre.pv -= Math.abs(classe_perso.atk - class_monstre.prot); 
-        Hist.push(" " + " Vous attaquez : "+ class_monstre.nom + " à encore " + class_monstre.pv + " pv");
+        Hist.push(" " + " Vous attaquez : "+ class_monstre.nom + " à " + class_monstre.pv + " pv");
     }
     else{
         Hist.push("Vous avez raté votre attaque !")
@@ -52,7 +52,7 @@ function EsquiveMpMonstre(max){
     getRandomInt(max);
     if (class_monstre.esquive < esquive_random){
         class_monstre.pv -= Math.abs(classe_perso.mag - class_monstre.prot); 
-        Hist.push(" " + " Vous attaquez : "+ class_monstre.nom + " à encore " + class_monstre.pv + " pv");
+        Hist.push(" " + " Vous attaquez : "+ class_monstre.nom + " à " + class_monstre.pv + " pv");
     }
     else{
         Hist.push("Vous avez raté votre sort !")
@@ -72,9 +72,7 @@ function verif(){
     else if (class_monstre.pv<=0){ //Cas où le joueur gagne
         classe_perso.levelUp();
         classe_perso.or +=30;
-        console.log(classe_perso);
         FinCombat();
-        console.log(i_boss);
         if(i_boss == 5){
             Hist.shift();
             Hist.push("Vous êtes une légende !");
@@ -96,7 +94,6 @@ $("#atk").click(function (){
         if (inGame == true){
             EsquiveJoueur(100);
         }
-        
     }
     else{
         EsquiveJoueur(100);
