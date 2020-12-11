@@ -33,7 +33,7 @@
                     <div>
                         <h3 class="text_shop"> Que souhaitez-vous améliorer ? </h3>
                         <div style="display:flex; justify-content: center;">
-                            <div id="WeaponUp" class="image-boutique image-weapon" title="Arme+"></div>
+                            <div id="WeaponUp" class="image-boutique image-weapon" title="Arme+ "></div>
                             <div id="ProtUp" class="image-boutique image-portect" title="Def+"></div>
                             <div id="MagUp" class="image-boutique image-magie" title="Magie+"></div>
                         </div>
@@ -130,20 +130,21 @@
                 <!-- Affichage Texte Combat -->
             <div class="divHistory">
             </div>
-            <section id="divHistory">
+            <section id="affiche_combat">
             </section>
-               
+                
         </section>
 
         <div class="div-btn-pre-combat">
             <button  class="btn-pre-combat" id="btn-pre-combat"> Commencer le combat</button>
+            <button  class="btn-pre-combat" id="btn_save"> Sauvegarder</button>
         </div>
 
             <!-- Bouton pour le mode Combat-->
         <section class="section_btnPerso">
             <button  class="btn_combat" id="atk">Attaquer</button> 
             <button  class="btn_combat" id="srt">Compétence</button> 
-            <button  class="btn_combat" id="info">Info Joueur</button> 
+            <!-- <button  class="btn_combat" id="info">Info Joueur</button>  -->
             <button  class="btn_combat" id="run" >Abandonner</button> 
         </section class="section_btnPerso">
 
@@ -156,9 +157,10 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/combat.js"></script>
     <script src="js/Personnage.js"></script>
     <script src="js/Monstre.js"></script>
+    <script src="js/save.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
