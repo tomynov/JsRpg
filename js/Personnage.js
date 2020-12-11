@@ -112,7 +112,7 @@ class Ninja extends Personnage{
     }
 }
 
-class Magician extends Personnage{
+class Magicien extends Personnage{
 
     constructor(nom, atk, prot, protmag, mag, maxpv, pv, maxmp, mp, vitesse, esquive, level){
         super(nom, atk, prot, protmag, mag, maxpv, pv, maxmp, mp, vitesse, esquive, level);
@@ -127,7 +127,7 @@ class Magician extends Personnage{
         this.mp = 3;
         this.vitesse = 10;
         this.esquive = 10;
-        this.nom = "Magician";
+        this.nom = "Magicien";
     }
 }
 
