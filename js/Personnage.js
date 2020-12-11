@@ -19,17 +19,14 @@ class Personnage{
     // Amélioration des Armes (atk), Protection (prot) et Magie (mag)
     WeaponUp(){
         this.atk += 10;
-        // Ameliorer differrement en fonction de la classe choisie
     }
 
     ProtUp(){
         this.prot += 10;
-         // Ameliorer differrement en fonction de la classe choisie
     }
 
     MagUp(){
         this.mag += 10;
-        // Ameliorer differrement en fonction de la classe choisie
     }
 
 
@@ -71,8 +68,8 @@ class Guerrier extends Personnage{
         this.maxpv = 200;
         this.maxmp = 2;
         this.mp = 2;
-        this.vitesse = 20;
-        this.esquive = 0;
+        this.vitesse = 15;
+        this.esquive = 10;
         this.nom = "Guerrier";
     }
 }
@@ -83,7 +80,7 @@ class Archer extends Personnage{
         super(nom, atk, prot, protmag, mag, maxpv, pv, maxmp, mp, vitesse, esquive, level);
         this.pv = 150;
         this.level = 1;
-        this.atk = 85;
+        this.atk = 10000;
         this.prot = 35;
         this.protmag = 5;
         this.mag = 90;
@@ -91,7 +88,7 @@ class Archer extends Personnage{
         this.maxmp = 3;
         this.mp = 3;
         this.vitesse = 25;
-        this.esquive = 5;
+        this.esquive = 30;
         this.nom = "Archer";
     }
 }
@@ -110,7 +107,7 @@ class Ninja extends Personnage{
         this.maxmp = 2;
         this.mp = 2;
         this.vitesse = 30;
-        this.esquive = 15;
+        this.esquive = 35;
         this.nom = "Ninja";
     }
 }
@@ -124,12 +121,12 @@ class Magician extends Personnage{
         this.atk = 65;
         this.prot = 50;
         this.protmag = 25;
-        this.mag = 90;
+        this.mag = 95;
         this.maxpv = 140;
         this.maxmp = 3;
         this.mp = 3;
-        this.vitesse = 20;
-        this.esquive = 5;
+        this.vitesse = 10;
+        this.esquive = 10;
         this.nom = "Magician";
     }
 }
