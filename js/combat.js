@@ -65,13 +65,11 @@ function EsquiveMpMonstre(max){
 ///////////////
 function verif(){
     if (classe_perso.pv <= 0){ //Cas où le joueur perd
-        console.log("Looser");
         FinCombat();
         localStorage.clear();
         document.location.reload();
     }
     else if (class_monstre.pv<=0){ //Cas où le joueur gagne
-        console.log("Winner");
         classe_perso.levelUp();
         classe_perso.or +=30;
         console.log(classe_perso);
@@ -95,7 +93,10 @@ $("#atk").click(function (){
     if (classe_perso.vitesse >= class_monstre.vitesse){
         EsquiveMonstre(100);
         verif();
-        EsquiveJoueur(100);
+        if (inGame == true){
+            EsquiveJoueur(100);
+        }
+        
     }
     else{
         EsquiveJoueur(100);
@@ -103,7 +104,6 @@ $("#atk").click(function (){
         EsquiveMonstre(100);
     }
     AfficheHistoriqueCombat();
-    console.log(Hist);
     $(".p-div-infos").remove();
     PlayerInfo();
 })
@@ -114,7 +114,9 @@ $("#srt").click(function(){
         if (classe_perso.vitesse >= class_monstre.vitesse){
             EsquiveMpMonstre(100);
             verif();
-            EsquiveJoueur(100);
+            if (inGame == true){
+                EsquiveJoueur(100);
+            }
             classe_perso.mp -= 1;
         }
         else{
@@ -130,11 +132,6 @@ $("#srt").click(function(){
     else{
         alert("Vous n'avez pas assez de mp");
     }
-})
-
-//Donne les infos du personnages
-$("#info").click(function (){
-    console.log(classe_perso);
 })
 
     //Bouton abandonner (rafraichi la page lors de l'banadon)
