@@ -80,7 +80,7 @@ class Archer extends Personnage{
         super(nom, atk, prot, protmag, mag, maxpv, pv, maxmp, mp, vitesse, esquive, level);
         this.pv = 150;
         this.level = 1;
-        this.atk = 10000;
+        this.atk = 85;
         this.prot = 35;
         this.protmag = 5;
         this.mag = 90;
