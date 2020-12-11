@@ -10,15 +10,12 @@ class Monstre{
         this.vitesse;
     }
 
-    levelUp(atk, mag, prot, maxpv, pv, maxmp, mp, vitesse, esquive, level){
+    levelUp(atk, prot, maxpv, pv, maxmp, mp, vitesse, esquive, level){
         if(this.level %2 == 0){
             this.atk += 12;
-            this.mag += 7;
-            this.maxpv += 18;
-            this.pv += 25;
-            this.vitesse += 10;
-        }
-        else{
+            this.maxpv += 15;
+            this.pv += 15;
+            this.vitesse += 8;
             this.prot += 8;
             this.maxmp += 8;
             this.mp += 8;
@@ -36,7 +33,7 @@ class Gobelin extends Monstre{
         this.pv = 150;
         this.mp = 20;
         this.prot = 30;
-        this.esquive = 30;
+        this.esquive = 10;
         this.vitesse = 10;
         this.level = 1;
     }
@@ -50,7 +47,7 @@ class Goule extends Monstre{
         this.prot = 10;
         this.pv = 120;
         this.mp = 20;
-        this.esquive = 50;
+        this.esquive = 25;
         this.vitesse = 70;
         this.level = 1;
     }
@@ -64,7 +61,7 @@ class Ogre extends Monstre{
         this.pv = 170;
         this.prot = 10;
         this.mp = 30;
-        this.esquive = 1;
+        this.esquive = 5;
         this.vitesse = 1;
         this.level = 1;
     }
@@ -79,8 +76,8 @@ class Esprit extends Monstre{
         this.pv = 100;
         this.prot = 50;
         this.mp = 30;
-        this.esquive = 10;
-        this.vitesse = 20;
+        this.esquive = 15;
+        this.vitesse = 25;
         this.level = 1;
     }
 }
@@ -94,7 +91,7 @@ class Banshee extends Monstre{
         this.pv = 350;
         this.mp = 40;
         this.esquive = 5;
-        this.vitesse = 10;
+        this.vitesse = 20;
         this.level += 1;
     }
 }
@@ -107,7 +104,7 @@ class Dragon extends Monstre{
         this.pv = 500;
         this.prot = 120;
         this.mp = 60;
-        this.esquive = 30;
+        this.esquive = 1;
         this.vitesse = 100;
         this.level = 1;
     }
